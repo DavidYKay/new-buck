@@ -2,10 +2,16 @@ java_test(
   name = 'tests',
   srcs = glob(['*.java']),
   visibility = [ 'PUBLIC' ],
+  source_under_test = [
+    '//java/com/example/activity:activity'
+    ],
 
   deps = [
-    '//libs/junit:junit',
+    '//libs/android:android',
+    '//libs/android:maps',
+    '//libs/aa-junit:junit',
     '//libs/hamcrest:hamcrest',
+    '//libs/aa-robolectric:robolectric',
     '//java/com/example/activity:activity',
     ],
   )

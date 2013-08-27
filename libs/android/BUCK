@@ -1,0 +1,11 @@
+prebuilt_jar(
+  name = 'android',
+  binary_jar = 'android.jar',
+  visibility = [ 'PUBLIC' ],
+)
+
+prebuilt_jar(
+  name = 'maps',
+  binary_jar = 'maps.jar',
+  visibility = [ 'PUBLIC' ],
+)
