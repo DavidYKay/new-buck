@@ -1,0 +1,11 @@
+java_test(
+  name = 'tests',
+  srcs = glob(['*.java']),
+  visibility = [ 'PUBLIC' ],
+
+  deps = [
+    '//libs/junit:junit',
+    '//libs/hamcrest:hamcrest',
+    '//java/com/example/activity:activity',
+    ],
+  )
